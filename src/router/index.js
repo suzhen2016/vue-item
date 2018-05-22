@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import PagesView from '../views/PagesView'
 import HomeView from '../views/HomeView'
 import MovieView from '../views/MovieView'
+import MyView from '../views/MyView'
 import BookView from '../views/BookView'
 import StatusView from '../views/StatusView'
 import GroupView from '../views/GroupView'
@@ -38,6 +39,11 @@ export default new Router({
           path: 'movie',
           name: 'MovieView',
           component: MovieView
+        },
+        {
+          path: 'my',
+          name: 'MyView',
+          component: MyView
         },
         {
           path: 'book',

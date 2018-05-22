@@ -1,10 +1,10 @@
 <template>
   <div class="download-app">
     <div class="info">
-      <img src="../assets/douban-app-logo.png" alt="下载豆瓣">
+      <img src="../assets/app-logo.png" alt="下载苏氏之道">
       <div class="info-content">
-        <strong>豆瓣</strong>
-        <div>我们的精神角落</div>
+        <strong>苏氏之道</strong>
+        <div>我若成佛，天下无魔，我若成魔，佛奈我何</div>
       </div>
     </div>
     <a href="#">去 App Store 免费下载 iOS 客户端</a>

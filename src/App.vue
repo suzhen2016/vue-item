@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view class="view"></router-view>
+    <!-- 路由的显示视图的位置 -->
     <router-view class="view" name="subject"></router-view>
     <router-view class="view" name="search"></router-view>
   </div>
