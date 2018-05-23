@@ -1,19 +1,20 @@
 <template>
   <div class="movie-view has-header">
-    <types></types>
-    <download-app></download-app>
+    <!-- <types></types> -->
+    <list-item></list-item>
+    <download-app class="download-wei"></download-app>
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
 
-import Types from '../components/Types'
+import ListItem from '../components/ListItem'
 import DownloadApp from '../components/DownloadApp'
 
 export default {
   name: 'movie-view',
-  components: { Types, DownloadApp },
+  components: { ListItem, DownloadApp },
   data () {
     return {}
   },
@@ -40,5 +41,8 @@ export default {
 </script>
 
 <style scoped>
-
+  .download-wei {
+    position: fixed;
+    bottom: 3rem;
+  }
 </style>
