@@ -5,6 +5,7 @@ import PagesView from '../views/PagesView'
 import HomeView from '../views/HomeView'
 import MovieView from '../views/MovieView'
 import MyView from '../views/MyView'
+import FirstView from '../views/FirstView'
 import BookView from '../views/BookView'
 import StatusView from '../views/StatusView'
 import GroupView from '../views/GroupView'
@@ -28,7 +29,7 @@ export default new Router({
       children: [
         {
           path: '',
-          redirect: '/pages/home'
+          redirect: '/pages/my'
         },
         {
           path: 'home',
@@ -44,6 +45,11 @@ export default new Router({
           path: 'my',
           name: 'MyView',
           component: MyView
+        },
+        {
+          path: 'first',
+          name: 'FirstView',
+          component: FirstView
         },
         {
           path: 'book',

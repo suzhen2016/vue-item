@@ -4,8 +4,8 @@
         <div class="content">
             <ul class='ui-list'>
                 <li v-for="item in items">
-                    <!-- <a :href=" baseUri ">{{item.title}}</a>  -->
-                    <router-link :to="{ name: 'MovieView'}">{{item.title}}</router-link> 
+                    <!-- <a >{{item.title}}</a>  -->
+                    <router-link :to="{ name: 'FirstView'}">{{item.title}}</router-link> 
                 </li>
             </ul>
         </div>
@@ -35,31 +35,31 @@ export default {
           ref: 'movie/action'
         },
         {
-          title: '第一次离开家乡',
+          title: '浔阳楼宋江吟反诗',
           href: 'movie/action'
         },
         {
-          title: '第一次离开家乡',
+          title: '林教头风雪山神庙',
           href: 'movie/action'
         },
         {
-          title: '第一次离开家乡',
+          title: '宋公明大战乌龙岭',
           href: 'movie/action'
         },
         {
-          title: '第一次离开家乡',
+          title: '花和尚大闹桃花村',
           href: 'movie/action'
         },
         {
-          title: '第一次离开家乡',
+          title: '梁山泊林冲落草',
           href: 'movie/action'
         },
         {
-          title: '第一次离开家乡',
+          title: '淫妇药鸩武大郎',
           href: 'movie/action'
         },
         {
-          title: '第一次离开家乡',
+          title: '武松斗杀西门庆',
           href: 'movie/action'
         }
       ]

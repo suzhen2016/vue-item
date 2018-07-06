@@ -2,15 +2,11 @@
   <div class="search-view has-header">
     <div class="search">
       <form id="search_form" onsubmit="return false">
-        <input
-          type="text"
-          name="query"
-          v-model.trim.lazy="queryStr"
-          placeholder="搜索 书 / 影 / 音 / 标签">
+        <input type="text" name="query" v-model.trim.lazy="queryStr" placeholder="搜索 书 / 影 / 音 / 标签">
         <a href="javascript:void(0);" @click="query()">搜索</a>
       </form>
     </div>
-    <div  class="search-res">
+    <div class="search-res">
       <!-- <group title="影视" :items="queryRes_movie" 简写形式> -->
       <group title="影视" v-bind:items="queryRes_movie">
         <a class="list-link" href="#" slot="more">查看更多影视结果---</a>
@@ -55,7 +51,7 @@ export default {
       // }
 
       queryRes_movie () {
-        console.log(this.$store.state)
+        console.log('测试分类选择', this.$store.state)
         return this.$store.state.search.queryRes_movie
       }
 
@@ -91,7 +87,7 @@ export default {
 .search-view {
   .search {
     padding: 0.7rem 2rem;
-    border-bottom: 0.1rem solid #F2F2F2;
+    border-bottom: 0.1rem solid #f2f2f2;
     overflow: hidden;
 
     input {

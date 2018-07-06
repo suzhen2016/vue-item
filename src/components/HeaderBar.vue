@@ -11,7 +11,7 @@
           我的战场
         </router-link>
       </li>
-      <li>
+      <!-- <li>
         <router-link style="color: #2384E8" :to="{ name: 'MovieView'}">
           电影
         </router-link>
@@ -30,7 +30,7 @@
         <router-link style="color: #2AB8CC" :to="{ name: 'GroupView'}">
           小组
         </router-link>
-      </li>
+      </li> -->
     </ul>
     <span class="talion" @click="showTalion"></span>
     <!-- @click   v-on:click = '事件名' 执行本组件的方法 -->
